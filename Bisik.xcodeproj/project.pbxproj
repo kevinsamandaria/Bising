@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		E218EE352889508600ED7293 /* BisikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218EE342889508600ED7293 /* BisikApp.swift */; };
-		E218EE372889508600ED7293 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218EE362889508600ED7293 /* ContentView.swift */; };
+		E218EE372889508600ED7293 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218EE362889508600ED7293 /* HomeView.swift */; };
 		E218EE392889508700ED7293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E218EE382889508700ED7293 /* Assets.xcassets */; };
 		E218EE3C2889508700ED7293 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E218EE3B2889508700ED7293 /* Preview Assets.xcassets */; };
+		E246CFB8288D870A0024ACFC /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E246CFB7288D870A0024ACFC /* PlayView.swift */; };
+		E25328E2288E38E70029257F /* PlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25328E1288E38E70029257F /* PlayViewModel.swift */; };
+		E25328E7288E84AA0029257F /* SentenceContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E25328E5288E84AA0029257F /* SentenceContainer.xcdatamodeld */; };
+		E25328E9288E84F90029257F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25328E8288E84F90029257F /* DataController.swift */; };
+		E26DCD592891588600C62A10 /* SortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DCD582891588600C62A10 /* SortView.swift */; };
+		E26DCD5B2891595600C62A10 /* FinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DCD5A2891595600C62A10 /* FinishView.swift */; };
+		E2727D6B288AD8A6002A1BD0 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2727D6A288AD8A6002A1BD0 /* CustomColor.swift */; };
+		E2727D6D288ADD4A002A1BD0 /* HowToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2727D6C288ADD4A002A1BD0 /* HowToView.swift */; };
+		E27B7D79288AE3C1001E455C /* Skia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E27B7D78288AE3C1001E455C /* Skia.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E218EE312889508600ED7293 /* Bisik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bisik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E218EE342889508600ED7293 /* BisikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BisikApp.swift; sourceTree = "<group>"; };
-		E218EE362889508600ED7293 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E218EE362889508600ED7293 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E218EE382889508700ED7293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E218EE3B2889508700ED7293 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E246CFB7288D870A0024ACFC /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		E25328E1288E38E70029257F /* PlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewModel.swift; sourceTree = "<group>"; };
+		E25328E6288E84AA0029257F /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		E25328E8288E84F90029257F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		E26DCD582891588600C62A10 /* SortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortView.swift; sourceTree = "<group>"; };
+		E26DCD5A2891595600C62A10 /* FinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishView.swift; sourceTree = "<group>"; };
+		E2727D6A288AD8A6002A1BD0 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		E2727D6C288ADD4A002A1BD0 /* HowToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToView.swift; sourceTree = "<group>"; };
+		E27B7D78288AE3C1001E455C /* Skia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skia.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				E218EE332889508600ED7293 /* Bisik */,
+				E218EE342889508600ED7293 /* BisikApp.swift */,
+				E218EE382889508700ED7293 /* Assets.xcassets */,
 				E218EE322889508600ED7293 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,10 +71,10 @@
 		E218EE332889508600ED7293 /* Bisik */ = {
 			isa = PBXGroup;
 			children = (
-				E218EE342889508600ED7293 /* BisikApp.swift */,
-				E218EE362889508600ED7293 /* ContentView.swift */,
-				E218EE382889508700ED7293 /* Assets.xcassets */,
+				E27B7D72288AE213001E455C /* BISING */,
+				E25328E4288E395B0029257F /* Data */,
 				E218EE3A2889508700ED7293 /* Preview Content */,
+				E27B7D74288AE277001E455C /* Assets */,
 			);
 			path = Bisik;
 			sourceTree = "<group>";
@@ -65,6 +85,77 @@
 				E218EE3B2889508700ED7293 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E25328E3288E39450029257F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E27B7D73288AE22B001E455C /* ViewModel */,
+				E27B7D71288AE1F8001E455C /* MainView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E25328E4288E395B0029257F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E25328E5288E84AA0029257F /* SentenceContainer.xcdatamodeld */,
+				E25328E8288E84F90029257F /* DataController.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E27B7D70288AE1E8001E455C /* Custom Font */ = {
+			isa = PBXGroup;
+			children = (
+				E27B7D78288AE3C1001E455C /* Skia.ttf */,
+			);
+			path = "Custom Font";
+			sourceTree = "<group>";
+		};
+		E27B7D71288AE1F8001E455C /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				E218EE362889508600ED7293 /* HomeView.swift */,
+				E2727D6C288ADD4A002A1BD0 /* HowToView.swift */,
+				E246CFB7288D870A0024ACFC /* PlayView.swift */,
+				E26DCD582891588600C62A10 /* SortView.swift */,
+				E26DCD5A2891595600C62A10 /* FinishView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		E27B7D72288AE213001E455C /* BISING */ = {
+			isa = PBXGroup;
+			children = (
+				E25328E3288E39450029257F /* View */,
+			);
+			path = BISING;
+			sourceTree = "<group>";
+		};
+		E27B7D73288AE22B001E455C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E25328E1288E38E70029257F /* PlayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E27B7D74288AE277001E455C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E27B7D75288AE289001E455C /* Custom Color */,
+				E27B7D70288AE1E8001E455C /* Custom Font */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E27B7D75288AE289001E455C /* Custom Color */ = {
+			isa = PBXGroup;
+			children = (
+				E2727D6A288AD8A6002A1BD0 /* CustomColor.swift */,
+			);
+			path = "Custom Color";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27B7D79288AE3C1001E455C /* Skia.ttf in Resources */,
 				E218EE3C2889508700ED7293 /* Preview Assets.xcassets in Resources */,
 				E218EE392889508700ED7293 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +229,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E218EE372889508600ED7293 /* ContentView.swift in Sources */,
+				E25328E2288E38E70029257F /* PlayViewModel.swift in Sources */,
+				E26DCD5B2891595600C62A10 /* FinishView.swift in Sources */,
+				E218EE372889508600ED7293 /* HomeView.swift in Sources */,
 				E218EE352889508600ED7293 /* BisikApp.swift in Sources */,
+				E25328E7288E84AA0029257F /* SentenceContainer.xcdatamodeld in Sources */,
+				E2727D6D288ADD4A002A1BD0 /* HowToView.swift in Sources */,
+				E25328E9288E84F90029257F /* DataController.swift in Sources */,
+				E26DCD592891588600C62A10 /* SortView.swift in Sources */,
+				E246CFB8288D870A0024ACFC /* PlayView.swift in Sources */,
+				E2727D6B288AD8A6002A1BD0 /* CustomColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,13 +369,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bisik/Preview Content\"";
+				DEVELOPMENT_TEAM = 8W8G9585D3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bisik/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Bising;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,13 +401,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bisik/Preview Content\"";
+				DEVELOPMENT_TEAM = 8W8G9585D3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bisik/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Bising;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +447,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E25328E5288E84AA0029257F /* SentenceContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E25328E6288E84AA0029257F /* DataModel.xcdatamodel */,
+			);
+			currentVersion = E25328E6288E84AA0029257F /* DataModel.xcdatamodel */;
+			path = SentenceContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E218EE292889508600ED7293 /* Project object */;
 }
