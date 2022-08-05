@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/69495883/183069479-c29719f8-5a50-4d4d-984e-24f329063d2c.png" width="200">
+<img src="https://user-images.githubusercontent.com/69495883/183069479-c29719f8-5a50-4d4d-984e-24f329063d2c.png">
 
 Bising is an App that will help you to improve your skill in English especially in Listening. Bising using Game Concept to help you Improving you Listening in English. The Objective of the game is simple, you need to rearrange the word to match the audio 
 
