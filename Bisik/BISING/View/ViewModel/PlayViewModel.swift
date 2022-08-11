@@ -9,13 +9,13 @@ import Foundation
 import AVFoundation
 import SwiftUI
 
-struct List: Identifiable{
+struct AudioLIst: Identifiable{
     var id: UUID
     var audio: String
 }
 
 class PlayViewModel: ObservableObject {
-    var listSentences = DataController()
+    var dataControl = DataController()
     let synthesizer = AVSpeechSynthesizer()
     var utterance = AVSpeechUtterance()
     
@@ -25,11 +25,11 @@ class PlayViewModel: ObservableObject {
     @Published var score = 0
     
     func audioConfiguration(index:Int, isPlay:Bool){
-        audioData = listSentences.savedEntity.map { entity in
+        audioData = dataControl.savedEntity.map{ entity in
             entity.value(forKey: "sentence") as! String
         }
         
-        utterance = AVSpeechUtterance(string: audioData[index])
+        utterance = AVSpeechUtterance(string: (audioData[index]))
         utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
         utterance.rate = 0.5
         

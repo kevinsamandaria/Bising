@@ -9,11 +9,12 @@ import SwiftUI
 import AVFoundation
 
 struct PlayView: View {
-    @StateObject var playViewModel =  PlayViewModel()
+    @StateObject var playViewModel = PlayViewModel()
     @State var idx = 0
     @State var isPlaying = true
     @State var countDown = 60
     @State var timeRun = true
+    @State var users = ["Paul", "Taylor", "Adele"]
     
     var tempArr:[String] = []
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -23,7 +24,7 @@ struct PlayView: View {
             custom.customColor.color1.ignoresSafeArea()
             
             VStack{
-                Text("Score: \(playViewModel.score)")
+                Text("Score: 0")
                     .font(.custom("Skia", size: 24))
                     .foregroundColor(custom.customColor.color4)
                     .padding(.leading, 230)
@@ -38,7 +39,7 @@ struct PlayView: View {
                                 if countDown > 0 && timeRun {
                                     countDown -= 1
                                 } else {
-                                    timeRun = false
+                                    timeRun.toggle()
                                 }
                             })
                             .font(.system(size: 48))
@@ -58,10 +59,6 @@ struct PlayView: View {
                                 .resizable()
                                 .foregroundColor(custom.customColor.color4)
                                 .frame(width: 32, height: 32)
-                        }.onAppear {
-                            playViewModel.audioConfiguration(index: idx, isPlay: isPlaying)
-                            playViewModel.sortWord(index: idx)
-                            playViewModel.shuffle(index: idx)
                         }
                         
                         Text("Audio")
@@ -70,11 +67,41 @@ struct PlayView: View {
                 }
                 
                 VStack(spacing: 25) {
-                    SortView()
+//                    VStack(spacing: 25){
+                    EditButton()
+//                        List {
+                    ForEach(users, id: \.self) { index in
+                                Text("\(index)")
+                                    .fontWeight(.bold)
+                                    .padding(.leading, 20)
+                                    .frame(width: 320, height: 60, alignment: .leading)
+                                    .foregroundColor(.black)
+                                    .moveDisabled(true)
+                                    .font(.custom("Skia", size: 24))
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .foregroundColor(custom.customColor.color4)
+                                    )
+                            }
+                            .onMove(perform: move)
+//                        }
+//                    }
                 }
+            }
+            .onAppear {
+                playViewModel.audioConfiguration(index: idx, isPlay: isPlaying)
+                playViewModel.sortWord(index: idx)
+                playViewModel.shuffle(index: idx)
             }
             .padding(.bottom, 100)
         }
+    }
+    
+    func move(from source: IndexSet, to destination: Int) {
+        users.move(fromOffsets: source, toOffset: destination)
+//            withAnimation {
+//                isEditable = false
+//            }
     }
 }
 

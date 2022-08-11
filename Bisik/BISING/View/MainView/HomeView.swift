@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State var isPresent = false
-//    @EnvironmentObject var playViewModel: PlayViewModel
+    @StateObject var playViewModel = PlayViewModel()
     
     var body: some View {
         NavigationView{
@@ -54,7 +54,11 @@ struct HomeView: View {
                     
                 }.frame(width: 3250, height: 305, alignment: .center)
             }
+            .onAppear {
+                DataController().addData()
+            }
         }
+        
     }
 }
 
