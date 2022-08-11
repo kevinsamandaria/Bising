@@ -13,11 +13,9 @@ struct BisikApp: App {
     
     var body: some Scene {
         WindowGroup {
-            //            UserDefaults.standard.set(0, forKey: "initData")
+
             HomeView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
-            //                tess()
-            //                    .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
     
